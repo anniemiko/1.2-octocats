@@ -1,3 +1,47 @@
-body{
-  background-color: blue
+
+.octodex {
+    padding: 1em;
+  -moz-column-count: 3;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1em;
+  column-count: 3;
+  column-gap: 1em;
+}
+
+img{
+  max-width: 100%;
+}
+
+.octocat img{
+  border-style: inset;
+  border-width: 1px;
+  border-color: #B0B0B0;
+}
+
+.image-number{
+  display: inline;
+  font-family: inherit;
+  color: gray;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.image-caption{
+  display: inline;
+  font-size: 10px;
+  color: gray;
+}
+
+.image-caption a{
+
+}
+
+.authors img{
+  display:inline;
+  width: 5%;
+}
+
+.authors, .authors li{
+  display: inline;
 }
