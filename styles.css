@@ -13,35 +13,72 @@ img{
   max-width: 100%;
 }
 
-.octocat img{
-  border-style: inset;
-  border-width: 1px;
-  border-color: #B0B0B0;
+.octocat > a > img {
+  border:1px solid lightgrey;
+  border-radius: 1%;
+  padding: 0px;
+}
+
+.image-footer{
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  border-bottom: 2px solid lightgrey;
+  padding: 12px 0px 12px 0px;
+}
+
+.octodex .image-footer:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-top-color: #lightgrey;
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+
+ul{
+  padding: 0px;
 }
 
 .image-number{
   display: inline;
-  font-family: inherit;
-  color: gray;
-  font-size: 10px;
+  font: helvetica;
+  color: lightgrey;
+  font-size: 14px;
   font-weight: bold;
+  float: left;
+}
+
+.image-number:before{
+  content:"#";
 }
 
 .image-caption{
   display: inline;
-  font-size: 10px;
+  font-family: helvetica;
+  font-size: 14px;
+  font-weight: bold;
   color: gray;
+  text-align: right;
 }
 
 .image-caption a{
-
+text-decoration: none;
+color: black;
+font-weight: bold;
+font: helvetica;
 }
 
 .authors img{
   display:inline;
-  width: 5%;
+  width: 6%;
+  float:right;
 }
 
 .authors, .authors li{
   display: inline;
+  font: helvetica;
 }
