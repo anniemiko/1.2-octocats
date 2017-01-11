@@ -17,26 +17,18 @@ img{
   border:1px solid lightgrey;
   border-radius: 1%;
   padding: 0px;
+  margin: 0px;
 }
-
-.image-footer{
+.octocat > a{
+  text-decoration: none;
+}
+.image-footer {
   display: inline-block;
   width: 100%;
   text-align: right;
   border-bottom: 2px solid lightgrey;
-  padding: 12px 0px 12px 0px;
-}
-
-.octodex .image-footer:before {
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    border: 8px solid transparent;
-    border-top-color: #lightgrey;
-    position: absolute;
-    right: 7px;
-    top: 0;
+  padding: 0px 0px 12px 0px;
+  margin-top: 0px;
 }
 
 ul{
@@ -81,4 +73,16 @@ font: helvetica;
 .authors, .authors li{
   display: inline;
   font: helvetica;
+}
+
+.image-footer::before{
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-top-color: lightgrey;
+  position: relative;
+  right: -95%;
+  top: auto;
 }
