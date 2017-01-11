@@ -13,15 +13,14 @@ img{
   max-width: 100%;
 }
 
-.octocat > a > img {
+.octocat > a {
+  display: inline-block;
   border:1px solid lightgrey;
-  border-radius: 1%;
+  border-radius: 5px;
   padding: 0px;
   margin: 0px;
 }
-.octocat > a{
-  text-decoration: none;
-}
+
 .image-footer {
   display: inline-block;
   width: 100%;
@@ -44,7 +43,7 @@ ul{
   float: left;
 }
 
-.image-number:before{
+.image-number::before{
   content:"#";
 }
 
@@ -68,6 +67,7 @@ font: helvetica;
   display:inline;
   width: 6%;
   float:right;
+  border-radius: 5px;
 }
 
 .authors, .authors li{
@@ -84,5 +84,5 @@ font: helvetica;
   border-top-color: lightgrey;
   position: relative;
   right: -95%;
-  top: auto;
+  top: 0;
 }
